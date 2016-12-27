@@ -19,8 +19,13 @@
 				<td>{{ zip.lat }},</td>
 				<td>{{ zip.lng }}</td>
 			</tr>
-			<!-- tr><td>{{zip}}</td><td>{{latitude}}</td><td>{{longitude}}</td></tr -->
 		</table>
+		
+		<form>
+			Starting ZIP Code: <input type="text" ng-model="minRequest"><br />
+			Total # of Request: <input type="text" ng-model="maxRequest"><br />
+			<button ng-click="submit()">Submit</button>
+		</form>
 	</div>
 
 	<p><a href="https://developers.google.com/maps/documentation/geocoding/start">Google Maps Docs</a></p>
